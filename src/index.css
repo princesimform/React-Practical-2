@@ -167,6 +167,14 @@ p {
 .add-task {
   cursor: pointer;
 }
+
+.date,
+.month,
+.year,
+.day,
+.todo-name p {
+  color: var(--active-font-color);
+}
 @media only screen and (max-width: 400px) {
   .add-task-icon {
     margin-left: 6rem;
