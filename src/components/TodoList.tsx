@@ -1,14 +1,17 @@
-import React, { useState } from "react";
-import TodoListdata from "../data/TodoListdata";
-import TodoListItem from "./TodoListItem";
+import React from "react";
+import Data from "../data/Data";
+import TodoItem from "./TodoItem";
 
 function TodoList() {
-  const [todoListdata, setTodoListdata] = useState(TodoListdata);
+  if (Data == undefined || Data.length == 0) {
+    return <p>No Data Avaliable</p>;
+  }
+
   return (
     <div className='todo-list'>
-      {todoListdata.map((item) => {
+      {Data.map((item) => {
         return (
-          <TodoListItem
+          <TodoItem 
             key={item.id}
             data={item.data}
             isCompleted={item.isCompleted}

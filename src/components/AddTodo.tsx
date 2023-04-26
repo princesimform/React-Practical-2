@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
-function AddTask() {
+function AddTodo() {
   return (
     <div className='add-task'>
       <span className='add-task-icon'>
@@ -12,4 +12,4 @@ function AddTask() {
   );
 }
 
-export default AddTask;
+export default AddTodo;

@@ -1,6 +1,6 @@
 import { TodoListdataType } from "../Types/TodoListDataType";
 
-const TodoListdata: TodoListdataType[] = [
+const Data: TodoListdataType[] = [
   {
     id: 1,
     data: "Buy new sweatshirt",
@@ -38,4 +38,4 @@ const TodoListdata: TodoListdataType[] = [
   },
 ];
 
-export default TodoListdata;
+export default Data;

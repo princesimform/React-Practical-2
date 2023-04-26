@@ -2,14 +2,14 @@ import "./App.css";
 import Layout from "./components/Layout";
 import Header from "./components/Header";
 import TodoList from "./components/TodoList";
-import AddTask from "./components/AddTask";
+import AddTodo from "./components/AddTodo";
 function App() {
   return (
     <div className='App'>
       <Layout>
-        <Header />
+        <Header /> {/* Statelass Component */}
         <TodoList />
-        <AddTask />
+        <AddTodo />
       </Layout>
     </div>
   );
